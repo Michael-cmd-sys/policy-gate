@@ -77,7 +77,7 @@ pub enum Operator {
     Exists,
 }
 
-fn operator_str(op: Operator) -> &'static str {
+pub fn operator_str(op: Operator) -> &'static str {
     match op {
         Operator::Eq => "==",
         Operator::Ne => "!=",
